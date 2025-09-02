@@ -2,9 +2,9 @@ import './style.css'
 
 function Footer() {
     return (
-        <footer id="footer">
-            Minha primeira página em React - &copy; Todos os direitos reservados
-        </footer >
+        <footer>
+            <p> &copy; Todos os direitos reservados (= </p>
+        </footer>
     )
 }
 

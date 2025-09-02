@@ -1,9 +1,9 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import List from './components/List'
-import Images from './components/Images'
-import Form from './components/Form'
+import Home from './pages/Home'
+import About from './pages/About'
 
 function App() {
   return (
@@ -11,13 +11,11 @@ function App() {
       {/* Cabeçalho */}
       <Header />
 
-      {/* Conteúdo da página */}
-      <main>
-        <List titulo="Batata" exibirPrimeiraLista={true} />
-        <List titulo="Aipim" />
-        <Images />
-        <Form />
-      </main >
+      {/* Rotas */}
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+      </Routes>
 
       {/* Rodapé */}
       <Footer />
